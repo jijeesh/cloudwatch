@@ -26,7 +26,7 @@ Standard "CPU Utilization" metrics shows maximum 20% for **t2.medium** instance 
 "Real CPU Usage" shows real maximum, so you can use it for autoscaling
 ![real-cpu](https://cloud.githubusercontent.com/assets/11991783/7495399/f4d3f5b8-f40d-11e4-9f5a-e2d09f0d1a53.png)
 
-Print the number of containers on the Docker instance.
+##### 4.Print the number of containers on the Docker instance.
 
 containerMonitor.py
 
