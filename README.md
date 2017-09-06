@@ -38,7 +38,7 @@ the ip address of the container
 the container status: running, stopped, crashed or paused
 the container's network activity
 Usage
-
+```
 containerHelper.py [-h] container {cpu,ip,memory,network,status} ...
 
 positional arguments:
@@ -56,3 +56,4 @@ Counters:
     memory              Display memory usage
     network             Display network usage
     status              Display the container status
+```
