@@ -25,3 +25,34 @@ Standard "CPU Utilization" metrics shows maximum 20% for **t2.medium** instance 
 
 "Real CPU Usage" shows real maximum, so you can use it for autoscaling
 ![real-cpu](https://cloud.githubusercontent.com/assets/11991783/7495399/f4d3f5b8-f40d-11e4-9f5a-e2d09f0d1a53.png)
+
+Print the number of containers on the Docker instance.
+
+containerMonitor.py
+
+A script inspired from a nice article about metric. It enables you to get several metrics from a running container:
+
+the user or system cpu used by the container
+the memory used by the container
+the ip address of the container
+the container status: running, stopped, crashed or paused
+the container's network activity
+Usage
+
+containerHelper.py [-h] container {cpu,ip,memory,network,status} ...
+
+positional arguments:
+  container             Container name
+
+optional arguments:
+  -h, --help            show this help message and exit
+
+Counters:
+  Available counters
+
+  {cpu,ip,memory,network,status}
+    cpu                 Display CPU usage
+    ip                  Display IP Address
+    memory              Display memory usage
+    network             Display network usage
+    status              Display the container status
